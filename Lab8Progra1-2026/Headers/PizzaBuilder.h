@@ -3,6 +3,7 @@
 #include <string>
 #include "TomatoesRepository.h"
 #include "MeatsRepository.h"
+#include "ChesseRepository.h"
 #include "IngredientSelector.h"
 
 class PizzaBuilder {
@@ -14,6 +15,7 @@ public:
 private:
     void WaitForEnterAndClear();
     bool QuiereSeguirAgregandoTomate();
+	bool QuiereSeguirAgregandoQueso();
 	bool QuiereSeguirAgregandoCarne();
     void SelectTomatoes();
     void IrAlSiguienteIngrediente();
@@ -25,6 +27,7 @@ private:
 
     TomatoesRepository tomatoRepo_;
 	MeatsRepository meatRepo_;
+	CheeseRepository cheeseRepo_;
 
     // Cada miembro llena su lista desde su método Select.
     std::vector<std::string> selectedTomatoes_;
@@ -33,8 +36,9 @@ private:
     std::vector<std::string> selectedHerbs_;
 
     const std::vector<std::string> availableTomatoes_ = {"Cherry", "Roma", "Beefsteak", "Heirloom", "Grape"};
-    // TODO: agrega aquí la lista de tu ingrediente.
-    // const std::vector<std::string> availableCheeses_ = { ... };
+    // TODO: agrega aquí la lista de tu ingredien
     const std::vector<std::string> availableMeats_ = { "Pepperoni", "Bacon", "Chicken", "Shrimp", "Mignom", "Ham", "Sausage", "Prosciutto" };
+    // const std::vector<std::string> availableCheeses_ = { ... };
+    const std::vector<std::string> availableCheeses_ = { "Mozzarella", "Cheddar", "Parmesan", "Cream Cheese", "Gouda", "Blue Cheese", "Feta", };
     // const std::vector<std::string> availableHerbs_ = { ... };
 };

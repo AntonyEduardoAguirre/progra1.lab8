@@ -3,7 +3,7 @@
 
 
 CheeseRepository::CheeseRepository() {
-    auto data = DataLoader::LoadFromFile(".txt");
+    auto data = DataLoader::LoadFromFile("cheese.txt");
     data_ = std::move(data);
 }
 

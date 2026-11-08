@@ -144,6 +144,7 @@
   </ItemDefinitionGroup>
   <ItemGroup>
     <ClCompile Include="Classes\ChesseRepository.cpp" />
+    <ClCompile Include="Classes\HerbsRepository.cpp" />
     <ClCompile Include="Classes\DataLoader.cpp" />
     <ClCompile Include="Classes\IngredientSelector.cpp" />
     <ClCompile Include="Classes\MeatsRepository.cpp" />
@@ -153,6 +154,7 @@
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="Headers\ChesseRepository.h" />
+    <ClInclude Include="Headers\HerbsRepository.h" />
     <ClInclude Include="Headers\DataLoader.h" />
     <ClInclude Include="Headers\IngredientSelector.h" />
     <ClInclude Include="Headers\MeatsRepository.h" />

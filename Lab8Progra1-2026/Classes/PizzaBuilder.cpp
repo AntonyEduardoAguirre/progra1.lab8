@@ -113,9 +113,7 @@ void PizzaBuilder::IrAlSiguienteIngrediente() {
 
     switch (siguiente) {
     case 2:
-        // TODO queso: descomenta SelectCheese(). No pongas break:
-        // así el switch sigue hasta el default mientras no haya más ingredientes.
-        // SelectCheese();
+        SelectCheese();
     case 3:
         SelectMeat();
     case 4:
